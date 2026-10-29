@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MR LTDA | Marketing direto, publicidade e consultoria</title>
+<meta name="description" content="MR LTDA, CNPJ 69.589.990/0001-41. Marketing direto, agência de publicidade, promoção de vendas e consultoria em João Pessoa, PB. Telefone (63) 7400-0367.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6FA; --surface:#FFFFFF; --ink:#101B3B; --muted:#55627F; --line:#D3D9E6; --accent:#C8231F; --on-accent:#fff;
+  --display:'Bricolage Grotesque',Arial,sans-serif; --body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0B1226; --surface:#131C38; --ink:#EEF1F6; --muted:#9AA6C4; --line:#26325A; --accent:#FF5A52; --on-accent:#101B3B; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0B1226; --surface:#131C38; --ink:#EEF1F6; --muted:#9AA6C4; --line:#26325A; --accent:#FF5A52; --on-accent:#101B3B; color-scheme:dark}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:60}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;letter-spacing:-.02em}
+h1{font-size:clamp(36px,5.6vw,60px);font-weight:800}
+h2{font-size:clamp(28px,4vw,38px);font-weight:800;margin-bottom:28px}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+p{margin:0 0 14px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 21px var(--display)}
+nav{display:flex;gap:24px;font-size:15px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:13px 26px;border-radius:6px;font-weight:600;text-decoration:none;font-size:16px}
+.mono{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:6px;background:var(--accent);color:var(--on-accent);font:800 15px var(--display);letter-spacing:0}
+.hero{padding:72px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:50ch;margin:22px 0 30px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 26px;margin:0}
+.card div{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.card div:last-child{border-bottom:0}
+.card dt{color:var(--muted);flex:none}
+.card dd{margin:0;text-align:right;font-weight:500;overflow-wrap:anywhere}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.about{max-width:68ch}
+.about p{color:var(--muted)}
+.about p strong{color:var(--ink)}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px 26px}
+.item p{color:var(--muted);font-size:16px;margin:8px 0 0}
+.item small{display:block;margin-top:12px;color:var(--muted);font-size:13.5px;font-variant-numeric:tabular-nums}
+.item.main{border-color:var(--accent);border-width:2px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact address{font-style:normal;color:var(--muted)}
+.contact address b{display:block;color:var(--ink);font-weight:600}
+.contact address p{margin-bottom:22px}
+.legal{max-width:72ch}
+.legal h3{margin:28px 0 8px}
+.legal p,.legal li{color:var(--muted);font-size:16px}
+.legal ul{padding-left:20px;margin:0 0 14px}
+footer{background:var(--ink);color:var(--paper);padding:36px 0;font-size:14.5px}
+:root[data-theme="dark"] footer{background:var(--surface);color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:var(--surface);color:var(--ink)}}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px 40px}
+footer p{margin:0 0 4px;opacity:.85}
+footer a{opacity:.85}
+@media (max-width:860px){
+  .hero .wrap,.contact,.list{grid-template-columns:1fr}
+  nav a:not(.keep){display:none}
+}
+@media (max-width:520px){.card div{flex-direction:column;gap:2px}.card dd{text-align:left}.hero{padding:48px 0 56px}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="MR LTDA, início">
+      <span class="mono" aria-hidden="true">MR</span>
+      MR LTDA
+    </a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a><a href="#atividades">Atividades</a><a href="#privacidade">Privacidade</a><a href="#termos">Termos</a><a class="keep" href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>MR LTDA</h1>
+      <p class="lead">Empresa de marketing direto, publicidade e consultoria, com sede em João Pessoa, Paraíba. Ajudamos negócios a planejar campanhas, comunicar ofertas e acompanhar resultados.</p>
+      <a class="btn" href="#contato">Entre em contato</a>
+    </div>
+    <dl class="card" aria-label="Dados cadastrais da empresa">
+      <div><dt>Razão social</dt><dd>MR LTDA</dd></div>
+      <div><dt>Nome fantasia</dt><dd>MR LTDA</dd></div>
+      <div><dt>CNPJ</dt><dd>69.589.990/0001-41</dd></div>
+      <div><dt>Natureza jurídica</dt><dd>Sociedade Empresária Limitada</dd></div>
+      <div><dt>Porte</dt><dd>ME</dd></div>
+      <div><dt>Abertura</dt><dd>13/10/2026</dd></div>
+      <div><dt>Situação</dt><dd>Ativa</dd></div>
+    </dl>
+  </div>
+</div>
+
+<section id="sobre">
+  <div class="wrap">
+    <h2>Sobre a empresa</h2>
+    <div class="about">
+      <p>A <strong>MR LTDA</strong> é uma sociedade empresária limitada constituída em 13 de outubro de 2026 e registrada no Cadastro Nacional da Pessoa Jurídica (CNPJ) sob o número 69.589.990/0001-41.</p>
+      <p>Nossa atividade principal é o <strong>marketing direto</strong>: comunicação planejada para gerar uma ação concreta do público, como um contato, um cadastro ou uma compra.</p>
+      <p>Também atuamos com publicidade, promoção de vendas, consultoria, intermediação de serviços e negócios, produção de conteúdo digital e treinamentos profissionais.</p>
+    </div>
+  </div>
+</section>
+
+<section id="atividades">
+  <div class="wrap">
+    <h2>Atividades</h2>
+    <div class="list">
+      <article class="item main"><h3>Marketing direto</h3><p>Planejamento e execução de campanhas voltadas a uma resposta direta do público.</p><small>CNAE 73.19-0-03 · atividade principal</small></article>
+      <article class="item"><h3>Agência de publicidade</h3><p>Criação e veiculação de peças publicitárias em meios digitais.</p><small>CNAE 73.11-4-00</small></article>
+      <article class="item"><h3>Promoção de vendas</h3><p>Campanhas e ações promocionais para estimular a venda de produtos e serviços.</p><small>CNAE 73.19-0-02</small></article>
+      <article class="item"><h3>Consultoria em publicidade</h3><p>Análise de campanhas e orientação sobre estratégia, mensagem e investimento.</p><small>CNAE 73.19-0-04</small></article>
+      <article class="item"><h3>Portal e conteúdo na internet</h3><p>Publicação de conteúdo e serviços de informação em ambiente digital.</p><small>CNAE 63.19-4-00</small></article>
+      <article class="item"><h3>Intermediação de serviços e negócios</h3><p>Agenciamento de serviços e negócios em geral, exceto imobiliários.</p><small>CNAE 74.90-1-04</small></article>
+      <article class="item"><h3>Treinamento profissional e gerencial</h3><p>Capacitação em desenvolvimento profissional e gerencial.</p><small>CNAE 85.99-6-04</small></article>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <h2>Contato</h2>
+    <div class="contact">
+      <address>
+        <p><b>MR LTDA</b>CNPJ 69.589.990/0001-41</p>
+        <p><b>Endereço</b>R. Severino Nicolau de Melo, 420, Sala 207 B, Cxpst 2123<br>Jardim Oceania, João Pessoa, PB<br>CEP 58.037-700</p>
+        <p><b>Telefone</b><a href="tel:+556374000367">(63) 7400-0367</a></p>
+        <p><b>E-mail</b><a href="mailto:miqueiasrikelme1@gmail.com">miqueiasrikelme1@gmail.com</a></p>
+      </address>
+      <div>
+        <p style="color:var(--muted)">Para orçamentos, dúvidas, solicitações sobre dados pessoais ou assuntos comerciais, escreva para o e-mail ao lado. Respondemos em dias úteis.</p>
+        <a class="btn" href="mailto:miqueiasrikelme1@gmail.com?subject=Contato%20pelo%20site">Enviar e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacidade">
+  <div class="wrap legal">
+    <h2>Política de Privacidade</h2>
+    <p>Última atualização: 29/10/2026. Esta política explica como a MR LTDA (CNPJ 69.589.990/0001-41), controladora dos dados, trata informações pessoais conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+    <h3>Dados que tratamos</h3>
+    <p>Tratamos apenas os dados que você nos envia por e-mail, como nome, endereço de e-mail e o conteúdo da mensagem. Este site não possui formulários de cadastro nem área de login.</p>
+    <h3>Finalidade e base legal</h3>
+    <p>Usamos esses dados para responder suas mensagens, enviar propostas e cumprir obrigações legais, com base no seu consentimento, na execução de procedimentos preliminares de contrato e no cumprimento de obrigação legal.</p>
+    <h3>Compartilhamento e armazenamento</h3>
+    <p>Não vendemos dados pessoais. Podemos compartilhá-los com prestadores de serviço necessários à operação (como provedores de e-mail e hospedagem) ou por determinação legal. Guardamos os dados pelo tempo necessário para a finalidade informada.</p>
+    <h3>Seus direitos</h3>
+    <p>Você pode solicitar confirmação de tratamento, acesso, correção, anonimização, portabilidade, eliminação dos dados e revogação do consentimento, nos termos do art. 18 da LGPD. Envie o pedido para miqueiasrikelme1@gmail.com.</p>
+    <h3>Alterações</h3>
+    <p>Podemos atualizar esta política. A data da última atualização fica sempre no início do texto.</p>
+  </div>
+</section>
+
+<section id="termos">
+  <div class="wrap legal">
+    <h2>Termos de Uso</h2>
+    <p>Última atualização: 29/10/2026. Ao acessar este site, você concorda com os termos abaixo.</p>
+    <h3>Finalidade do site</h3>
+    <p>Este site apresenta a MR LTDA, suas atividades e seus canais de contato. As informações têm caráter informativo e não constituem proposta comercial vinculante.</p>
+    <h3>Propriedade intelectual</h3>
+    <p>Marca, textos e identidade visual pertencem à MR LTDA. A reprodução depende de autorização por escrito.</p>
+    <h3>Responsabilidade</h3>
+    <p>Nos esforçamos para manter as informações corretas e atualizadas, mas não garantimos ausência de erros ou disponibilidade ininterrupta do site.</p>
+    <h3>Legislação e foro</h3>
+    <p>Estes termos são regidos pelas leis brasileiras. Fica eleito o foro da comarca de João Pessoa, PB, para dirimir eventuais conflitos.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><p><strong>MR LTDA</strong></p><p>CNPJ 69.589.990/0001-41</p><p>R. Severino Nicolau de Melo, 420, Sala 207 B, Cxpst 2123</p><p>Jardim Oceania, João Pessoa, PB, CEP 58.037-700</p></div>
+    <div><p><a href="tel:+556374000367">(63) 7400-0367</a></p><p><a href="mailto:miqueiasrikelme1@gmail.com">miqueiasrikelme1@gmail.com</a></p><p><a href="#privacidade">Política de Privacidade</a></p><p><a href="#termos">Termos de Uso</a></p><p>© 2026 MR LTDA</p></div>
+  </div>
+</footer>
+</body>
+</html>
